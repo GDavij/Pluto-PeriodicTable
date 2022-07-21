@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 //## Pages
-import PlutoTable from "./pages/PlutoTable";
+import PlutoTable from "./pages/PeriodicTable";
 
 export default function () {
   return (
