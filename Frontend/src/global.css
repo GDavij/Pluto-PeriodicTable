@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+:root {
+  --hydrogen: radial-gradient(#000, #a07);
+  --noble-gas: radial-gradient(#000, #307);
+  --alkali-metal: radial-gradient(#000, #0f15);
+  --alkaline-earth-metal: radial-gradient(#000, #46a);
+  --metaloid: radial-gradient(#000, #701);
+  --nonmetal: radial-gradient(#000, #153);
+  --post-transition-metal: radial-gradient(#000, #737);
+  --transition-metal: radial-gradient(#000, #943);
+  --lanthanide: radial-gradient(#000, #535);
+  --actinide: radial-gradient(#000, #735);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+*::-webkit-scrollbar {
+  background-color: #222;
+  width: 0.3rem;
+  height: 0.3rem;
+  border-radius: 12px;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 12px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #222;
+  border-radius: 12px;
+}
+*::-webkit-scrollbar-button {
+  background-color: #555;
+  border-radius: 12px;
+}
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 1;
+  justify-content: flex-start;
+  align-items: center;
+  background: linear-gradient(30deg, #000, #55e);
+}
+
+.noble-gas {
+  background: var(--noble-gas);
+}
+
+.alkali-metal {
+  background: var(--alkali-metal);
+}
+
+.alkaline-earth-metal {
+  background: var(--alkaline-earth-metal);
+}
+
+.metalloid {
+  background: var(--metaloid);
+}
+
+.nonmetal {
+  background: var(--nonmetal);
+}
+
+.post-transition-metal {
+  background: var(--post-transition-metal);
+}
+
+.transition-metal {
+  background: var(--transition-metal);
+}
+
+.lanthanide {
+  background: var(--lanthanide);
+}
+
+.actinide {
+  background: var(--actinide);
+}
+
+.unknown,
+.predicted,
+.probably {
+  background: radial-gradient(#000, #ccc);
+}
+
+.Hydrogen {
+  background: var(--hydrogen);
+}
+
+.Marked {
+  border: 2px solid #55f;
+}
