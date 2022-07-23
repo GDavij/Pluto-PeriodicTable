@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+
+:root {
+  --hydrogen: radial-gradient(#000, #f59);
+  --noble-gas: radial-gradient(#000, #50a);
+  --alkali-metal: radial-gradient(#000, #12f);
+  --alkaline-earth-metal: radial-gradient(#000, #5af);
+  --metaloid: radial-gradient(#000, #a02);
+  --nonmetal: radial-gradient(#000, #295);
+  --post-transition-metal: radial-gradient(#000, #a5a);
+  --transition-metal: radial-gradient(#000, #f54);
+  --lanthanide: radial-gradient(#000, #fa5);
+  --actinide: radial-gradient(#000, #f5f);
+  --unknown: radial-gradient(#000, #446);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+*::-webkit-scrollbar {
+  background-color: #000;
+  width: 0.2rem;
+  height: 0.2rem;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 12px;
+}
+*::-webkit-scrollbar-track {
+  background-color: #000;
+}
+*::-webkit-scrollbar-button {
+  background-color: #000;
+}
+body,
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  flex-shrink: 1;
+  overflow-y: auto;
+  justify-content: flex-start;
+  align-items: center;
+  background: #222;
+}
+
+.noble-gas {
+  background: var(--noble-gas);
+}
+
+.alkali-metal {
+  background: var(--alkali-metal);
+}
+
+.alkaline-earth-metal {
+  background: var(--alkaline-earth-metal);
+}
+
+.metalloid {
+  background: var(--metaloid);
+}
+
+.nonmetal {
+  background: var(--nonmetal);
+}
+
+.post-transition-metal {
+  background: var(--post-transition-metal);
+}
+
+.transition-metal {
+  background: var(--transition-metal);
+}
+
+.lanthanide {
+  background: var(--lanthanide);
+}
+
+.actinide {
+  background: var(--actinide);
+}
+
+.unknown,
+.predicted,
+.probably {
+  background: var(--unknown);
+}
+
+.Hydrogen {
+  background: var(--hydrogen);
+}
+
+.Marked {
+  border: 2px solid #55f;
+}
+
+#La,
+#Ac {
+  margin-left: 12.8rem;
+}
+
+@media screen and (max-width: 1080px) {
+  #La,
+  #Ac {
+    margin-left: 10.2rem;
+  }
+}
