@@ -1,4 +1,10 @@
-import { Element, AtomicNumber, Symbol } from "../components/PlutoTable/styled";
+import {
+  Element,
+  AtomicNumber,
+  Symbol,
+  ElementGradient,
+  Name,
+} from "../components/PlutoTable/styled";
 import { IElement } from "../Interfaces/InterfacesTable";
 import eventEmiter from "../utils/eventEmiter";
 
@@ -51,20 +57,34 @@ const ChangeMark = (Mark: string) => {
 };
 
 const ElementSquare = (eData: IElement) => {
-  return (
-    <Element
-      key={eData.symbol}
-      className={eData.category}
-      id={eData.symbol}
-      onClick={() => {
-        ChangeMark(eData.symbol);
-        ElementChange(eData);
-      }}
-    >
-      <AtomicNumber>{eData.number}</AtomicNumber>
-      <Symbol>{eData.symbol}</Symbol>
-    </Element>
-  );
+  if (eData.symbol === "Lats" || eData.symbol === "Acts") {
+    return (
+      <ElementGradient
+        key={eData.symbol}
+        className={eData.category}
+        id={eData.symbol}
+      >
+        <AtomicNumber>{eData.number}</AtomicNumber>
+        <Symbol>{eData.symbol}</Symbol>
+      </ElementGradient>
+    );
+  } else {
+    return (
+      <Element
+        key={eData.symbol}
+        className={eData.category}
+        id={eData.symbol}
+        onClick={() => {
+          ChangeMark(eData.symbol);
+          ElementChange(eData);
+        }}
+      >
+        <AtomicNumber>{eData.number}</AtomicNumber>
+        <Symbol>{eData.symbol}</Symbol>
+        <Name>{eData.name}</Name>
+      </Element>
+    );
+  }
 };
 
 export default {
