@@ -2,10 +2,13 @@ import { useEffect, useState } from "react";
 import db from "../../public/db/ForkDatabase.json";
 import { IElement } from "../../Interfaces/InterfacesTable";
 import {
+  DirectionColumn,
   ElementBarArea,
+  IndexAtomicMass,
   IndexAtomicNumber,
   IndexElectronicConfig,
   IndexElement,
+  IndexName,
   IndexSymbol,
   InlineData,
   OutLineData,
@@ -25,10 +28,11 @@ export default function () {
     <ElementBarArea>
       <IndexElement className={Element.category}>
         <IndexAtomicNumber>{Element.number}</IndexAtomicNumber>
-        <IndexSymbol>
-          <span>{Element.symbol}</span>
-          <span>{Element.name}</span>
-        </IndexSymbol>
+        <DirectionColumn>
+          <IndexSymbol>{Element.symbol}</IndexSymbol>
+          <IndexName>{Element.name}</IndexName>
+          <IndexAtomicMass>{Element.atomic_mass}</IndexAtomicMass>
+        </DirectionColumn>
         <IndexElectronicConfig>
           {Element.shells.map((e: number) => {
             return <span>{e}</span>;
