@@ -1,4 +1,4 @@
-# New Version Avaible (ReactJs 0.1)
+# New Version Available (ReactJs 0.1)
 
 ## 🗦 What is New 🗧
 
