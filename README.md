@@ -1,23 +1,17 @@
-<pre>
-<cite> Now Out of the Beta Version <cite> 
+# New Version Avaible (ReactJs 0.1)
 
-Hello Here is where u will find Infos about the actual state, why i code this and other infos about it
+## 🗦 What is New 🗧
 
-Why This: {
-    uhm... so i really like Chemistry as a Subject in school so i tried to do this in adction to learn and understand how JSON DataBase Works 
-    so i Made it cause i really like to make an Periodic Table coding in JS and i Wanted to understand and starting codding with .json
-}
+### <> New Design UI </>
 
-Actual State: {
-Very Adaptative with Little Bugs (Mostly on Mozzila(probaly because of it's Engine i think.
-it seems to do not wait a "Promise" of loadding Table and push to get elements before load all table )).
+### <> ReactJs Remake </>
 
-A Better Design 
-Adaptative Design (very Flex Design)
-}
+### <> More Information about Elements </>
 
-Other Infos{
-Future Layout Is Now Avaible 
+## Bugs 👾 ?
 
-}
-</pre>
+### 🖵Cool Interface Adjust
+
+#### so when u fit the screen to 1080px on a computer that supports more than 1080px, some itens on interface could not fit well as it can be, it will be on Observation for next update
+
+#
