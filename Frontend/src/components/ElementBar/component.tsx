@@ -19,8 +19,6 @@ export default function () {
 
   useEffect(() => {
     eventEmiter.addListener("ElementChange", (data: IElement) => {
-      console.log("Hello");
-      console.log(data);
       SetElement(data);
     });
   }, []);
@@ -34,8 +32,8 @@ export default function () {
           <IndexAtomicMass>{Element.atomic_mass}</IndexAtomicMass>
         </DirectionColumn>
         <IndexElectronicConfig>
-          {Element.shells.map((e: number) => {
-            return <span>{e}</span>;
+          {Element.shells.map((e: number, i: number) => {
+            return <span key={i}>{e}</span>;
           })}
         </IndexElectronicConfig>
       </IndexElement>

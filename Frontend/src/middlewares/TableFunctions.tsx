@@ -46,11 +46,8 @@ const ElementChange = (element: IElement) => {
 
 let LastMarked = "H";
 const ChangeMark = (Mark: string) => {
-  console.log("new MArk");
   const element: any = document.getElementById(Mark);
   const LastElement: any = document.getElementById(LastMarked);
-  console.log(element);
-  console.log(LastElement);
   LastElement.style.border = "";
   element.style.border = "2px solid #f08";
   LastMarked = Mark;
