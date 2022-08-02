@@ -8,7 +8,7 @@ export default function () {
         <Link to="/">
           <LIndex>
             <FaAtom />
-            Periodic Table
+            <span>Periodic Table</span>
           </LIndex>
         </Link>
       </UList>
