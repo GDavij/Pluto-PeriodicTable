@@ -21,8 +21,12 @@ export const UList = styled.ul`
   gap: 1.2rem;
   overflow-x: auto;
   font-size: 1.4rem;
-  @media screen and (max-width: 1080px) {
+
+  @media screen and (max-width: 1431px) {
     justify-content: flex-start;
+  }
+
+  @media screen and (max-width: 1080px) {
     font-size: 0.9rem;
   }
 
