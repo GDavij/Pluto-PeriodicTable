@@ -28,5 +28,4 @@ export const LIndex = styled.li`
   color: #fff;
   font-size: 2rem;
   font-weight: normal;
-  font-family: "Fredoka One", cursive;
 `;
