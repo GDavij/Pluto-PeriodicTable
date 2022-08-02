@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+2&display=swap");
 
 :root {
   --hydrogen: radial-gradient(#000, #f59);
@@ -21,6 +21,7 @@
   text-decoration: none;
   scroll-behavior: smooth;
   list-style: none;
+  font-family: "Baloo 2", sans-serif;
 }
 
 *::-webkit-scrollbar {
