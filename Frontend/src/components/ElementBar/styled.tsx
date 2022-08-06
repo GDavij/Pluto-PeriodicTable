@@ -136,6 +136,7 @@ export const IndexElectronicConfig = styled.div`
   left: 1rem;
   flex-grow: 0;
   flex-shrink: 0;
+  font-size: 0.8rem;
 `;
 
 export const InlineData = styled.span`
